@@ -1,0 +1,20 @@
+<audio id="myAudio" loop>
+  <source src="https://drive.google.com/uc?export=download&id=1-47ocD9kM3eynfM0vRKhGrz9ds3C_0lU" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<br>
+
+<button onclick="togglePlay()">Play / Pause</button>
+
+<script>
+  var audio = document.getElementById("myAudio");
+
+  function togglePlay() {
+    if (audio.paused) {
+      audio.play();
+    } else {
+      audio.pause();
+    }
+  }
+</script>
